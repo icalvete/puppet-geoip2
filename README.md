@@ -7,7 +7,7 @@ Puppet manifest to install and configure MaxMind GeoIP 2
 See [MaxMind site](http://dev.maxmind.com/geoip/geolite/)
 
 
-This manifest install GeoIP 2 (Country Level) and GeoLiteCity (City Level) databases
+This manifest install GeoIP 2 (Country Level)
 
 ## Usage
 
