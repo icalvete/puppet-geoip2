@@ -16,7 +16,7 @@ class geoip2::install {
     unless   => "/usr/bin/test -d ${geoip2::root_path}"
   }
 
-  cron { 'update__geoip2_database':
+  cron { 'update_geoip2_database':
     command => "/usr/bin/flock /tmp/update_geoip2_database /usr/bin/curl -s http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.tar.gz | tar xvfz - -C ${geoip2::root_path} --wildcards --no-anchored --strip-components 1 '*mmdb'",
     user    => 'root',
     hour    => '0',
